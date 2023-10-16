@@ -14,8 +14,7 @@ namespace Project.V0.SQLConn
         //1 Address of SQL server and DB
         string ConnectionString = "Data Source=MENENABANSPC\\SQLEXPRESS;Initial Catalog=Project_v0;Integrated Security=True";
         //2 Establish connection 
-        //SqlConnection conn = null; orig
-        private SqlConnection conn = null;// expirement
+        SqlConnection conn = null;
 
         public DB()
         {
