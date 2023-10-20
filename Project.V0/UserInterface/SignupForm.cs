@@ -16,11 +16,17 @@ namespace Project.V0.UserInterface
         public SignupForm()
         {
             InitializeComponent();
+            LoadData();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             btnAddFuntion();
+        }
+        //example of loading data using button
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
         /// <summary>
         /// Methods
@@ -49,18 +55,26 @@ namespace Project.V0.UserInterface
                     }
 
                     sc.AddUserInfo(Fname, Lname, ageInt, sex);
+                    MessageBox.Show("Succesfully created an account");
+                    LoadData();
                 }
                 else
                 {
-                    // The age input is not a valid integer
                     MessageBox.Show("Age must be a valid number.");
-                }
+                    txtAge.Clear();
+                }                
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
+        private void LoadData()
+        {
+            SignupClass s = new SignupClass();
+            List<SignupClass> list = s.getAllUserInfo();
+            dgUserinfo.DataSource = list;
+        }
+        
     }
 }
