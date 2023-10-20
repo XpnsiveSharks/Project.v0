@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -60,7 +61,7 @@ namespace Project.V0.UserInterface
                 }
                 else
                 {
-                    MessageBox.Show("Age must be a valid number.",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Age must be a valid number.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtAge.Clear();
                 }                
             }
@@ -71,9 +72,16 @@ namespace Project.V0.UserInterface
         }
         private void LoadData()
         {
-            SignupClass s = new SignupClass();
-            List<SignupClass> list = s.getAllUserInfo();
-            dgUserinfo.DataSource = list;
+            try
+            {
+                SignupClass s = new SignupClass();
+                List<SignupClass> list = s.getAllUserInfo();
+                dgUserinfo.DataSource = list;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         
     }
