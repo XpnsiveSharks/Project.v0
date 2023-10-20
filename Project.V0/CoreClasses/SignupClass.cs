@@ -24,11 +24,12 @@ namespace Project.V0.CoreClasses
         public List<SignupClass> getAllUserInfo()
         {
             List<SignupClass> list = new List<SignupClass>();
-            SqlConnection con = new SqlConnection (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Prince\Desktop\CSshark\Project.V0\Project.V0\Database_101.mdf;Integrated Security=True;Connect Timeout=30");
+           // SqlConnection con = new SqlConnection (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Prince\Desktop\CSshark\Project.V0\Project.V0\Database_101.mdf;Integrated Security=True;Connect Timeout=30");
             string sql = "SELECT * FROM USERINFOS";
-            con.Open ();
-            SqlCommand cmd = new SqlCommand (sql, con);
-            SqlDataReader dr = cmd.ExecuteReader ();
+            DB db = new DB();
+           // con.Open ();
+            //SqlCommand cmd = new SqlCommand (sql, con);
+            SqlDataReader dr = db.Execute(sql);
             while (dr.Read()) 
             {
                 SignupClass s = new SignupClass();

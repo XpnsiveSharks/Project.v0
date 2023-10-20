@@ -60,7 +60,7 @@ namespace Project.V0.UserInterface
                 }
                 else
                 {
-                    MessageBox.Show("Age must be a valid number.");
+                    MessageBox.Show("Age must be a valid number.",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtAge.Clear();
                 }                
             }
