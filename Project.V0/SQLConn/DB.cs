@@ -12,7 +12,8 @@ namespace Project.V0.SQLConn
     public class DB
     {
         //1 Address of SQL server and DB
-        string ConnectionString = "Data Source=MENENABANSPC\\SQLEXPRESS;Initial Catalog=Project_v0;Integrated Security=True";
+        // string ConnectionString = "Data Source=MENENABANSPC\\SQLEXPRESS;Initial Catalog=Project_v0;Integrated Security=True";
+        string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Prince\Desktop\CSshark\Project.V0\Project.V0\Database_101.mdf;Integrated Security=True;Connect Timeout=30";
         //2 Establish connection 
         SqlConnection conn = null;
 
@@ -20,12 +21,6 @@ namespace Project.V0.SQLConn
         {
             conn = new SqlConnection(ConnectionString);
         }
-        //experoment
-        public SqlConnection Conn
-        {
-            get { return conn; }
-        }
-        //experoment
         public SqlDataReader Execute(string Query)
         {
             

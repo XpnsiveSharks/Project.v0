@@ -22,7 +22,9 @@ namespace Project.V0.UserInterface
         {
             string user = txtUser.Text;
             string pass = txtPass.Text;
-            string Query = "INSERT INTO dbo.USERS_v0(USERNAME, PASSWORD) VALUES ('" + user + "','" + pass + "')";
+          //  string Query = "INSERT INTO dbo.USERS_v0(USERNAME, PASSWORD) VALUES ('" + user + "','" + pass + "')";
+            string Query = "INSERT INTO dbo.USERS_v0(username, password) VALUES ('" + user + "','" + pass + "')";
+
             DB dB = new DB();
             dB.Execute(Query);
         }

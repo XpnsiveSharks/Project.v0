@@ -17,7 +17,7 @@ namespace Project.V0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new UserInterface.SignupForm());
         }
     }
 }
