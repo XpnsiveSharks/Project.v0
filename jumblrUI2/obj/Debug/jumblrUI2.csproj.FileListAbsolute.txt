@@ -1,0 +1,13 @@
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\bin\Debug\jumblrUI2.exe.config
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\bin\Debug\jumblrUI2.exe
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\bin\Debug\jumblrUI2.pdb
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.csproj.AssemblyReference.cache
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.Form1.resources
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.Properties.Resources.resources
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.csproj.GenerateResource.cache
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.csproj.CoreCompileInputs.cache
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.exe
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.pdb
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.Game.resources
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.Hint.resources
+C:\Users\Arriane Gonzales\source\repos\jumblrUI2\obj\Debug\jumblrUI2.Answer.resources
